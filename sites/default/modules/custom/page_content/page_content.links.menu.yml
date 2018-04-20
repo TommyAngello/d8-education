@@ -1,0 +1,19 @@
+
+
+entity.page_content.collection:
+  title: 'Page content list'
+  route_name: entity.page_content.collection
+
+# Page content menu items definition
+entity.page_content.collection:
+  title: 'Page content list'
+  route_name: entity.page_content.collection
+  description: 'List Page content entities'
+  parent: system.admin_structure
+  weight: 100
+
+page_content.admin.structure.settings:
+  title: 'Page content settings'
+  description: 'Configure Page content entities'
+  route_name: page_content.settings
+  parent: system.admin_structure

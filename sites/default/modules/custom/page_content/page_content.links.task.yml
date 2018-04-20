@@ -1,0 +1,27 @@
+# Page content routing definition
+page_content.settings_tab:
+  route_name: page_content.settings
+  title: 'Settings'
+  base_route: page_content.settings
+
+entity.page_content.canonical:
+  route_name: entity.page_content.canonical
+  base_route: entity.page_content.canonical
+  title: 'View'
+
+entity.page_content.edit_form:
+  route_name: entity.page_content.edit_form
+  base_route: entity.page_content.canonical
+  title: 'Edit'
+
+entity.page_content.version_history:
+  route_name: entity.page_content.version_history
+  base_route: entity.page_content.canonical
+  title: 'Revisions'
+
+entity.page_content.delete_form:
+  route_name:  entity.page_content.delete_form
+  base_route:  entity.page_content.canonical
+  title: Delete
+  weight: 10
+

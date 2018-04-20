@@ -1,0 +1,7 @@
+email_address: form@examples.com
+
+address:
+  line_1: 123 fake st
+  city: Boston
+  state: MA
+  zip: 55555

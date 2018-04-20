@@ -1,0 +1,5 @@
+name: Theme Example
+type: module
+description: Example showing how to add a custom element and add JavaScript and CSS as a library
+core: 8.x
+package: Custom

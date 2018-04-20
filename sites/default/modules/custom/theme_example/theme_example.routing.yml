@@ -1,0 +1,6 @@
+theme_example.simple:
+  path: 'custom/theme-example/simple'
+  defaults:
+    _controller: '\Drupal\theme_example\Controller\ThemeExampleController::simple'
+  requirements:
+    _access: 'TRUE'

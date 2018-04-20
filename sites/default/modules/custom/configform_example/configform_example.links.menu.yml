@@ -1,0 +1,4 @@
+configform_example.form:
+  title: Config Form Example
+  route_name: configform_example_form
+  parent: system.admin_reports

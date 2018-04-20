@@ -1,0 +1,19 @@
+add article entity entities:
+  title: 'Create new Article entity entities'
+
+administer article entity entities:
+  title: 'Administer Article entity entities'
+  description: 'Allow to access the administration form to configure Article entity entities.'
+  restrict access: true
+
+delete article entity entities:
+  title: 'Delete Article entity entities'
+
+edit article entity entities:
+  title: 'Edit Article entity entities'
+
+view published article entity entities:
+  title: 'View published Article entity entities'
+
+view unpublished article entity entities:
+  title: 'View unpublished Article entity entities'

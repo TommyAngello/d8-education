@@ -1,0 +1,14 @@
+
+# Article entity menu items definition
+entity.article_entity.collection:
+  title: 'Article entity list'
+  route_name: entity.article_entity.collection
+  description: 'List Article entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+article_entity.admin.structure.settings:
+  title: 'Article entity settings'
+  description: 'Configure Article entity entities'
+  route_name: article_entity.settings
+  parent: system.admin_structure

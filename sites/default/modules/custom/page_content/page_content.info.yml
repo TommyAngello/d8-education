@@ -1,0 +1,5 @@
+name: 'Page Content'
+type: module
+description: 'Page Content Entity'
+core: 8.x
+package: 'Custom'

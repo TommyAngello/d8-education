@@ -1,0 +1,22 @@
+# Article entity routing definition
+article_entity.settings_tab:
+  route_name: article_entity.settings
+  title: 'Settings'
+  base_route: article_entity.settings
+
+entity.article_entity.canonical:
+  route_name: entity.article_entity.canonical
+  base_route: entity.article_entity.canonical
+  title: 'View'
+
+entity.article_entity.edit_form:
+  route_name: entity.article_entity.edit_form
+  base_route: entity.article_entity.canonical
+  title: 'Edit'
+
+entity.article_entity.delete_form:
+  route_name:  entity.article_entity.delete_form
+  base_route:  entity.article_entity.canonical
+  title: Delete
+  weight: 10
+

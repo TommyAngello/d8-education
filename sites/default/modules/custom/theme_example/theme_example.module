@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function theme_example_theme() {
+  $items = [
+    'my_element' => [
+      'render element' => 'element',
+    ],
+  ];
+  return $items;
+}
