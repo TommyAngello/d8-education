@@ -39,11 +39,10 @@ class ServiceExampleController extends ControllerBase {
     // ! DO NoT DO ThiS !
     $serviceExampleService = \Drupal::service('service_example.example_service');
     $value = $serviceExampleService->getServiceExampleValue();
-    dsm($value);
 
     return [
-//      '#markup' => $this->serviceExampleService->getServiceExampleValue()
-      '#markup' => $value
+      '#markup' => $this->serviceExampleService->getServiceExampleValue()
+//      '#markup' => $value
     ];
   }
 

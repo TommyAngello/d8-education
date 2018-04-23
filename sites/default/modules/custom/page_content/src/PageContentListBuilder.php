@@ -31,9 +31,6 @@ class PageContentListBuilder extends EntityListBuilder {
     }
 
     // My modify.
-//    dsm($this);
-//    dsm($this->moduleHandler->moduleExists('content_translation'));
-
     // Display only current language entites.
     if ($this->moduleHandler->moduleExists('content_translation')) {
       $langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
@@ -65,7 +62,6 @@ class PageContentListBuilder extends EntityListBuilder {
       ['page_content' => $entity->id()]
     );
     $row['language'] = $entity->language()->getName();
-//    dsm($entity->(language));
     return $row + parent::buildRow($entity);
   }
 

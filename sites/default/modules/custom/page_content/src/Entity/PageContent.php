@@ -235,7 +235,7 @@ class PageContent extends RevisionableContentEntityBase implements PageContentIn
       ->setDefaultValue('')
       ->setDisplayOptions('view', [
         'label' => 'above',
-        'type' => 'string',
+        'type' => 'article',
         'weight' => -4,
       ])
       ->setDisplayOptions('form', [
@@ -246,28 +246,36 @@ class PageContent extends RevisionableContentEntityBase implements PageContentIn
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
-    $fields['name'] = BaseFieldDefinition::create('string')
+    $fields['definition'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Definition'))
       ->setDescription(t('The definition of the Page content entity.'))
       ->setRevisionable(TRUE)
       ->setTranslatable(TRUE)
-      ->setSettings([
-        'max_length' => 50,
-        'text_processing' => 0,
-      ])
-      ->setDefaultValue('')
+      ->setSetting('target_type', 'node')
+      ->setSetting('handler', 'default')
+      ->setSetting('handler_settings', [
+          'target_bundles' => [
+            'article' => 'article',
+          ],
+        ]
+      )
       ->setDisplayOptions('view', [
-        'label' => 'above',
-        'type' => 'string',
+        'label' => 'hidden',
+        'type' => 'article',
         'weight' => -2,
       ])
       ->setDisplayOptions('form', [
-        'type' => 'string_textfield',
+        'type' => 'entity_reference_autocomplete',
         'weight' => -2,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'autocomplete_type' => 'tags',
+          'placeholder' => '',
+        ],
       ])
       ->setDisplayConfigurable('form', TRUE)
-      ->setDisplayConfigurable('view', TRUE)
-      ->setRequired(FALSE);
+      ->setDisplayConfigurable('view', TRUE);
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))

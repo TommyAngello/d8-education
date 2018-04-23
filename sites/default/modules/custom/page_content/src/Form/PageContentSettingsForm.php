@@ -46,7 +46,6 @@ class PageContentSettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    dsm($this);
     $form['pagecontent_settings']['#markup'] = 'Settings form for Page content entities. Manage field settings here.';
     return $form;
   }

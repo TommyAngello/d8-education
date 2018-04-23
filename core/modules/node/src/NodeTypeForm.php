@@ -47,7 +47,7 @@ class NodeTypeForm extends BundleEntityFormBase {
    */
   public function form(array $form, FormStateInterface $form_state) {
     $form = parent::form($form, $form_state);
-dsm($this);
+
     $type = $this->entity;
     if ($this->operation == 'add') {
       $form['#title'] = $this->t('Add content type');
