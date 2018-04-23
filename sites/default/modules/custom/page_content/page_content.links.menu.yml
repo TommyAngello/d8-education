@@ -17,3 +17,11 @@ page_content.admin.structure.settings:
   description: 'Configure Page content entities'
   route_name: page_content.settings
   parent: system.admin_structure
+
+# Configuration entity menu items definition
+entity.configuration_entity.collection:
+  title: 'Configuration entity'
+  route_name: entity.configuration_entity.collection
+  description: 'List Configuration entity (bundles)'
+  parent: system.admin_structure
+  weight: 99

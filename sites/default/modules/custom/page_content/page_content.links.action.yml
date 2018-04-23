@@ -3,3 +3,9 @@ entity.page_content.add_form:
   title: 'Add Page content'
   appears_on:
     - entity.page_content.collection
+entity.configuration_entity.add_form:
+  route_name: entity.configuration_entity.add_form
+  title: 'Add Configuration entity'
+  appears_on:
+    - entity.configuration_entity.collection
+

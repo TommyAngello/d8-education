@@ -1,0 +1,19 @@
+page_content.configuration_entity.*:
+  type: config_entity
+  label: 'Configuration entity config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+    title:
+      type: string
+      label: 'Title'
+    description:
+      type: text
+      label: 'Description'
+
