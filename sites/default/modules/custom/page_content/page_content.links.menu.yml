@@ -3,6 +3,14 @@
 entity.page_content.collection:
   title: 'Page content list'
   route_name: entity.page_content.collection
+  weight: 98
+
+entity.page_content.add_form:
+  title: 'Add Page Entity'
+  route_name: entity.page_content.add_form
+  weight: 99
+  # appears_on:
+  #  - entity.page_content.collection
 
 # Page content menu items definition
 entity.page_content.collection:
