@@ -1,0 +1,8 @@
+# Show how weights work.
+unit_content.colors:
+  # Add js files.
+  js:
+    js/color.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
