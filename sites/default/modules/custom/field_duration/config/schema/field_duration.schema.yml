@@ -1,0 +1,11 @@
+
+field.field_duration.value:
+  type: mapping
+  label: 'Default value'
+  mapping:
+    - type: mapping
+      label: 'Default'
+      mapping:
+        value:
+          type: string
+          label: 'Value'

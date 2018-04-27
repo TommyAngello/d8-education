@@ -1,0 +1,8 @@
+name: Field Duration
+type: module
+description: Custom Field Duration consits from start date and end date.
+package: Custom
+core: 8.x
+dependencies:
+  - drupal:field
+  - drupal:field_ui
