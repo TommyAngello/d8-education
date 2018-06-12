@@ -1,0 +1,8 @@
+unit_content.simple:
+  path: '/custom/unit-content'
+  defaults:
+    _controller: '\Drupal\unit_content\Controller\UnitContentController::simple'
+    _title: 'Unit Example'
+  requirements:
+    _permission: 'access content'
+

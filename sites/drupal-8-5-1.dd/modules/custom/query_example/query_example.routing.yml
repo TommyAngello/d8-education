@@ -1,0 +1,18 @@
+query_example.simple:
+  path: 'custom/query_example/simple'
+  defaults:
+    _controller: '\Drupal\query_example\Controller\QueryExampleController::basicQuery'
+  requirements:
+    _access: 'access content'
+query_example.intermediate:
+  path: 'custom/query_example/intermediate'
+  defaults:
+    _controller: '\Drupal\query_example\Controller\QueryExampleController::conditionalQuery'
+  requirements:
+    _access: 'TRUE'
+query_example.advanced:
+  path: 'custom/query_example/advanced'
+  defaults:
+    _controller: '\Drupal\query_example\Controller\QueryExampleController::conditionalGroupQuery'
+  requirements:
+    _access: 'TRUE'

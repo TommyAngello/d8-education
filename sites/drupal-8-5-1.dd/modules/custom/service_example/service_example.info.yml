@@ -1,0 +1,5 @@
+name: 'Service Example'
+type: module
+description: 'An example Services, dependency injection, and service containers'
+package: 'Custom'
+core: 8.x

@@ -5,13 +5,8 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.0.24",
-        "drupal/admin_toolbar": "^1.23",
-        "drupal/console": "~1.7",
-        "drupal/devel": "^1.2",
-        "drupal/module_filter": "^3.1",
-        "drush/drush": "^9.2",
-        "wikimedia/composer-merge-plugin": "^1.4",
-        "kint-php/kint": "^2.2"
+        "drupal/console": "~1.0",
+        "wikimedia/composer-merge-plugin": "^1.4"
     },
     "replace": {
         "drupal/core": "^8.5"

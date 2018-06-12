@@ -1,0 +1,5 @@
+name: 'External Link Content Type'
+type: module
+description: 'External Link Content Type'
+core: 8.x
+package: 'Custom'

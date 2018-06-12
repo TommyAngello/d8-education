@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains page_content.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function page_content_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the page_content module.
+    case 'help.page.page_content':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Page Content Entity') . '</p>';
+      return $output;
+
+    default:
+  }
+}

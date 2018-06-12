@@ -1,0 +1,12 @@
+.myElement {
+  border: 3px solid purple;
+  border-radius: 3px;
+  padding: 1em;
+  margin: 1em;
+  background-color: #eee;
+}
+.myElement .randomNumber {
+  color: purple;
+  font-weight: bold;
+  font-size: 1.2em;
+}

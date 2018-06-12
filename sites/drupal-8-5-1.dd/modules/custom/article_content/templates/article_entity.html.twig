@@ -1,0 +1,22 @@
+{#
+/**
+ * @file article_entity.html.twig
+ * Default theme implementation to present Article entity data.
+ *
+ * This template is used when viewing Article entity pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_article_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('article_entity') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

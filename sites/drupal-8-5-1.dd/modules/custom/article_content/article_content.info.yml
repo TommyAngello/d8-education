@@ -1,0 +1,5 @@
+name: 'Article Content'
+type: module
+description: 'Article content (no revisions, no translations).'
+core: 8.x
+package: 'Custom'
